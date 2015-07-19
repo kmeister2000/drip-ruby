@@ -3,7 +3,7 @@ require File.dirname(__FILE__) + '/../test_helper.rb'
 class Drip::ResourceTest < Drip::TestCase
   class TestResource < Drip::Resource
     def attribute_keys
-      %i{id name}
+      [:id, :name]
     end
 
     def process_attribute(key, value)

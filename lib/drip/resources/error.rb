@@ -7,7 +7,7 @@ module Drip
     end
 
     def attribute_keys
-      %i{code attribute message}
+      [:code, :attribute, :message]
     end
   end
 end
